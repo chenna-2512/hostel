@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Complaint"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit a Complaint"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+         />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Complaint Title"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cardview_shadow_end_color"
+        android:layout_marginTop="8dp"
+         />
+
+    <EditText
+        android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hostel Room Number"
+        android:textColor="@color/design_default_color_background"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:id="@+id/et_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe your complaint"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:textColor="@color/design_default_color_background"
+        android:layout_marginTop="8dp"
+         />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Complaint"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
